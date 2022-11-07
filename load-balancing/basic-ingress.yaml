@@ -18,6 +18,8 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: basic-ingress
+  annotations:
+    kubernetes.io/ingress.class: "gce"
 spec:
   defaultBackend:
     service:
